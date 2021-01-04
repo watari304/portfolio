@@ -18,3 +18,7 @@ footer {
 .about-card {
     background-color: #dee5e9;
 }
+
+.menu-link:hover {
+    color: #404750;
+}

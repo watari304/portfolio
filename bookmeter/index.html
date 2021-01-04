@@ -15,23 +15,28 @@
 <div class="wrapper">
   <div class="container mx-auto px-24 pt-20">
     <div class="row pb-14">
-      <h1 class="text-3xl">tsukawa's portfolio</h1>
+      <h1 class="text-3xl">読書メーター感想</h1>
     </div>
-    <div>
-      <ul class="list-inside list-disc menu-list ml-5">
-        <li class="pb-2"><a class="menu-link" href="/memo">memo</a></li>
-        <li class="pb-2"><strike>読書メータまとめ</strike></li>
-        <li class="pb-2"><strike>portfolio</strike></li>
-        <li>about
-          <div class="ml-5 mt-2 text-xs about-card w-72 p-5 rounded">
-            <p class="font-bold pb-2">つかわ</p>
-            <p>オタクで腐女子。会社員をしています。</p>
-          </div>
-        </li>
-      </ul>
+    <div id="app">
+      <table>
+        <tr>
+          <th>タイトル</th>
+          <th>感想</th>
+        </tr>
+        <tr v-for="book in books">
+          <td>
+             {{ book.title }}
+          </td>
+          <td>
+            {{ book.impressions }}
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 </div>
-<script src="/js/default.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="../js/bookmeter.js"></script>
 </body>
 </html>
