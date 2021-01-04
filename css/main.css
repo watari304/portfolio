@@ -2,7 +2,7 @@
 
 body {
     background-color : #cfd8dc;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
 }
 
 footer {
@@ -21,4 +21,9 @@ footer {
 
 .menu-link:hover {
     color: #404750;
+}
+
+.about-container p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
