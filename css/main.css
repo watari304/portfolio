@@ -1,0 +1,20 @@
+@import "output.css";
+
+body {
+    background-color : #cfd8dc;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer {
+    background-color: #EDF0F2;
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+    width: 100%;
+    border-top: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.about-card {
+    background-color: #dee5e9;
+}

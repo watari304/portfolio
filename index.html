@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +7,31 @@
   <title>tsukawa's portfolio</title>
   <meta name="msapplication-TileColor" content="#e7e6f2">
   <meta name="theme-color" content="#e7e6f2">
-
-  <link rel="stylesheet" href="/css/output.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  <div>
-    <table>
-      <tr>
-        <td class="text-yellow-500">about</td>
-        <td><a href="about/">about</a></td>
-      </tr>
-    </table>
-
+<div class="wrapper">
+  <div class="container mx-auto px-24 pt-20">
+    <div class="row pb-14">
+      <h1 class="text-3xl">tsukawa's portfolio</h1>
+    </div>
+    <div>
+      <ul class="list-inside list-disc menu-list ml-5">
+        <li class="pb-2"><strike>memo</strike></li>
+        <li class="pb-2"><strike>読書メータまとめ</strike></li>
+        <li class="pb-2"><strike>portfolio</strike></li>
+        <li>about
+          <div class="ml-5 mt-2 text-xs about-card w-72 p-5 rounded">
+            <p class="font-bold pb-2">つかわ</p>
+            <p>オタクで腐女子。会社員をしています。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
-  <p class="text-4xl text-green-700 text-center font-semibold">Hello Tailwind</p>
-
+</div>
 <script src="/js/default.js"></script>
 </body>
 </html>
