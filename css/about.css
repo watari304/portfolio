@@ -3,24 +3,67 @@
 body {
     background-color : #d5e6ee;
     font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
-    color : #333;
-}
-
-.about-card {
-    background-color: #eff8fd;
-    box-shadow: 4px 8px 8px 8px rgba(38, 67, 90, 0.05);
 }
 
 .about-container p{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    flex-direction: column;
 }
 
 a {
     transition: .2s;
-    color: rgb(45, 168, 250);
+    color: rgb(255, 255, 255);
 }
 
 a:hover {
     color: rgb(173, 218, 250);
+}
+
+.about-card {
+  width: 850px;
+  height: 670px;
+  border-radius: 50% 70% 40% 80%/60% 50% 80% 64%;
+  background-color: rgb(151, 202, 226);
+}
+
+.bg-card {
+  background-color: #ececec;
+  border-radius: 70% 60% 60% 70%/60% 50% 70% 70%;
+  width: 850px;
+  height: 670px;
+  animation: rotation 6s ease 0s infinite alternate forwards running;
+}
+
+.about-card, .bg-card {
+  mix-blend-mode: multiply;
+  margin: 0 -450px;
+}
+
+.about-card .name {
+  margin-top: 2.5rem;
+  margin-left: 14rem;
+}
+
+.about-card small p{
+  margin: 1rem 3rem 2rem 11rem;
+}
+
+p {
+  color : #000000cc;
+  z-index: 0;
+}
+
+@keyframes rotation {
+  0% {
+    border-radius: 70% 60% 60% 70%/60% 50% 70% 70%;
+  }
+
+  50% {
+    border-radius: 50% 70% 40% 80%/60% 50% 80% 64%;
+  }
+  
+  100% {
+    border-radius: 70% 50% 60% 80%/60% 70% 60% 70%;
+  }
 }
