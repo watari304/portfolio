@@ -1,29 +1,131 @@
-@import "output.css";
-
-body {
-    background-color : #cfd8dc;
-    font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
+/* @import "output.css"; */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+* {
+    font-family: 'Questrial', 'Noto Sans JP', sans-serif;
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* font-size: 1.15rem; */
 }
-
-footer {
-    background-color: #EDF0F2;
-    position: absolute;/*←絶対位置*/
-    bottom: 0; /*下に固定*/
+.container {
+    position: relative;
     width: 100%;
-    border-top: #ffffff;
-    border-style: solid;
-    border-width: 1px;
+    min-height: 100vh;
+    background-color : #e4ecef;
+}
+#svg1 {
+    position: absolute;
+    width:120%;
+    position: fixed;
+    top: 0;
+    left: -90px;
+    z-index: 2;
+    /* animation: header 3s linear 0s infinite alternate forwards running; */
+}
+#svg1 path{
+    fill: #46ccd8;
+}
+#svg2 {
+    position: absolute;
+    width:120%;
+    position: fixed;
+    top: 15px;
+    left: -100px;
+    z-index: 1;
+    animation: header 4s linear 0s infinite alternate forwards running;
 }
 
-.about-card {
-    background-color: #dee5e9;
+#svg2 path{
+    fill: #b2babda1;
 }
 
-.menu-link:hover {
-    color: #404750;
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 4rem;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10000;
 }
+header .title{
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.8rem;
+}
+header ul {
+    position: relative;
+    display: flex;
 
-.about-container p{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    color: #333;
+    padding: 0 3rem 0 0;
+    text-decoration: none;
+}
+.container section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section div h1 {
+    font-size:4rem;
+}
+#mainbox {
+    align-items: center;
+}
+#mainbox h1 {
+    letter-spacing: 0.8rem;
+    font-size: 11rem;
+    color:#46ccd8;
+}
+.subbox {
+    padding-top:2rem;
+}
+#about .text-box {
+    width: 100%;
+    text-align: center;
+}
+section .text-box div {
+    margin: 3rem 0 0 0;
+    height:200px;
+    /* background-color:#46ccd8; */
+
+}
+h3 {
+    font-size: 1.2rem;
+}
+.morelink {
+    margin-top:2rem;
+    display: inline-block;
+    padding: 0.8rem 2.2rem;
+    background-color: #fff;
+    color:#46ccd8;
+    text-decoration: none;
+    border-radius: 70% 60% 60% 70%/60% 50% 70% 70%;
+    cursor: pointer;
+}
+.morelink:hover {
+    background-color: #ffffffa1;
+    color:#46ccd8;
+    transition: all 300ms 0s ease;
+}
+@keyframes header {
+    0%{ left: 0; }
+    25% { left: -25px; }
+    50% { left: -50px; }
+    75% { left: -100px; }
+    100% { left: -125px; }
 }

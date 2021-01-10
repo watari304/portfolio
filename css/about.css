@@ -40,12 +40,16 @@ a:hover {
   margin: 0 -450px;
 }
 
-.about-card .name {
+/* .about-card .name {
   margin-top: 2.5rem;
   margin-left: 14rem;
-}
+} */
 
-.about-card small p{
+/* .about-card small p{
+  margin: 1rem 3rem 2rem 11rem;
+} */
+
+.contents {
   margin: 1rem 3rem 2rem 11rem;
 }
 
